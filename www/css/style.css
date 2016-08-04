@@ -4,3 +4,14 @@
     margin-top: 62px;
     display: none;
 }
+
+.item-thumbnail-left > img:first-child{
+    top: 20px;
+  }
+  .logo{
+  	text-align: center;
+ 
+  }
+  .popup{
+  	width: 300px;
+    }
