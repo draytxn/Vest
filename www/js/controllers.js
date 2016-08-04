@@ -26,7 +26,7 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('FriendsCtrl', function($scope, Friends, $ionicModal) 
+/*.controller('FriendsCtrl', function($scope, Friends, $ionicModal) 
 {
        $ionicModal.fromTemplateUrl('templates/friend-add-modal.html', 
        {
@@ -75,10 +75,7 @@ angular.module('starter.controllers', [])
           $scope.modal.remove();
         });
 })
-
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
-})
+*/
 
 .controller('AccountCtrl', function($scope, auth, $state, store) {
 
