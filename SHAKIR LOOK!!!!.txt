@@ -1,0 +1,22 @@
+.controller('DashCtrl', function($scope, $firebaseArray, $firebaseObject, $ionicPopup, $state) {
+  /*var test = new firebase("https://glowing-fire-3224.firebaseio.com/");
+  var testArray = $firebaseArray(test);
+
+  testArray.push().set({
+    name: "helka",
+    age: "too good for you"
+  });*/
+
+  var ref = new Firebase("https://vesttest-1378.firebaseio.com/");
+  var usersRef = ref.child("users");
+usersRef.set({
+  alanisawesome: {
+    date_of_birth: "June 22, 1912",
+    full_name: "Alan Turing"
+  },
+  gracehop: {
+    date_of_birth: "December 9, 1906",
+    full_name: "Grace Hopper"
+  }
+
+  });
