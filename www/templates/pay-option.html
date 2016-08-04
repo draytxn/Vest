@@ -1,5 +1,58 @@
-<ion-view title="Pay Option">
-  <ion-content class="has-header padding">
-    <p>hi</p>
+<ion-view hide-nav-bar="true" class="login-view">
+  <ion-content class="padding">
+
+   <div class="row row-center">
+      <div class="col">
+
+        <div id="logo"></div>
+
+        <form>
+          <div class="list">
+            <label class="item item-input">
+              <input type="text" placeholder="First Name" ng-model="formData.FirstName">
+            </label>
+            <label class="item item-input">
+              <input type="password" placeholder="LastName" ng-model="formData.LastName">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="IdNo" ng-model="formData.IdNo">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Email" ng-model="formData.Email">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Mobile No" ng-model="formData.Mobile">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Landline No" ng-model="formData.Landline">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Home Address" ng-model="formData.Address">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Parish" ng-model="formData.Parish">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Agreement Id No" ng-model="formData.AgreementId">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Agreement Date" ng-model="formData.AgreementDate">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Investment Amount" ng-model="formData.Amount">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Investment Maturity Date" ng-model="formData.MaturityDate">
+            </label>
+          </div>
+
+          <button class="button button-block button-positive button-login" ng-click="login()">
+            Login
+          </button>
+        </form>
+
+      </div>
+    </div>
+
   </ion-content>
 </ion-view>

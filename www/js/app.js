@@ -93,8 +93,14 @@ angular.module('starter', ['ionic',
     
     .state('furtherInfo', {
       url: '/furtherInfo',
-      templateUrl: 'templates/furtherInfo.html',
+      templateUrl: 'templates/further-info.html',
       controller: 'furtherInfoCtrl'
+    })
+
+    .state('furtherInfo1', {
+      url: '/furtherInfo1',
+      templateUrl: 'templates/further-info1.html',
+      controller: 'furtherInfoCtrl1'
     })
     
     .state('payOption', {

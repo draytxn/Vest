@@ -1,0 +1,47 @@
+<ion-view hide-nav-bar="true"  class="login-view">
+  <ion-content class="padding">
+
+    <div class="row row-center">
+      <div class="col">
+
+        <div id="logo"></div>
+
+        <form>
+          <div class="list">
+            <label class="item item-input">
+              <input type="text" placeholder="First Name" ng-model="formData.FirstName">
+            </label>
+            <label class="item item-input">
+              <input type="password" placeholder="LastName" ng-model="formData.LastName">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="IdNo" ng-model="formData.IdNo">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Email" ng-model="formData.Email">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Mobile No" ng-model="formData.Mobile">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Landline No" ng-model="formData.Landline">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Home Address" ng-model="formData.Address">
+            </label>
+            <label class="item item-input">
+              <input type="text" placeholder="Parish" ng-model="formData.Parish">
+            </label>
+          
+          </div>
+
+          <button class="button button-block button-positive button-login" ng-click="login()">
+            Next Page
+          </button>
+        </form>
+
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

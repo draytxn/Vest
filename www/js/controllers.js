@@ -16,7 +16,7 @@ angular.module('starter.controllers', [])
       api: 'firebase'
     }).then(function(delegation) {
       store.set('firebaseToken', delegation.id_token);
-      $state.go('payOption'); //was tab.friends
+      $state.go('furtherInfo');
     }, function(error) {
       console.log("There was an error logging in", error);
     })
@@ -99,6 +99,23 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('furtherInfoCtrl', function() {
+.controller('furtherInfoCtrl', function($scope, $state) {
   
+  $scope.formData = {};
+$scope.login = function () {
+  console.log("User logged in with membership no: " + $scope.formData.Name +
+  "\n and password: " + $scope.formData.password);
+  $state.go('furtherInfo1');
+ }
+})
+
+ .controller('furtherInfoCtrl1', function($scope, $state) {
+  
+  $scope.formData = {};
+$scope.login = function () {
+  console.log("User logged in with membership no: " + $scope.formData.Name +
+  "\n and password: " + $scope.formData.password);
+ }
+
+
 });
