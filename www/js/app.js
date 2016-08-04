@@ -94,13 +94,13 @@ angular.module('starter', ['ionic',
     .state('furtherInfo', {
       url: '/furtherInfo',
       templateUrl: 'templates/furtherInfo.html',
-      controller: 'payOptionCtrl'
+      controller: 'furtherInfoCtrl'
     })
     
     .state('payOption', {
       url: '/payOption',
       templateUrl: 'templates/pay-option.html',
-      controller: 'furtherInfoCtrl'
+      controller: 'payOptionCtrl'
     });
 
 
