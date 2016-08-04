@@ -83,6 +83,24 @@ angular.module('starter', ['ionic',
           controller: 'AccountCtrl'
         }
       }
+    })
+    
+    .state('touch', {
+      url: '/touch',
+      templateUrl: 'templates/touch.html',
+      controller: 'touchCtrl'
+    })
+    
+    .state('furtherInfo', {
+      url: '/furtherInfo',
+      templateUrl: 'templates/furtherInfo.html',
+      controller: 'payOptionCtrl'
+    })
+    
+    .state('payOption', {
+      url: '/payOption',
+      templateUrl: 'templates/pay-option.html',
+      controller: 'furtherInfoCtrl'
     });
 
 

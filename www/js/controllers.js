@@ -89,4 +89,16 @@ angular.module('starter.controllers', [])
     store.remove('refreshToken');
     $state.go('login');
   }
+})
+
+.controller('touchCtrl', function() {
+
+})
+
+.controller('payOptionCtrl', function() {
+  
+})
+
+.controller('furtherInfoCtrl', function() {
+  
 });
