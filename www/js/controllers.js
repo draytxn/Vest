@@ -16,7 +16,7 @@ angular.module('starter.controllers', [])
       api: 'firebase'
     }).then(function(delegation) {
       store.set('firebaseToken', delegation.id_token);
-      $state.go('tab.friends');
+      $state.go('payOption'); //was tab.friends
     }, function(error) {
       console.log("There was an error logging in", error);
     })
