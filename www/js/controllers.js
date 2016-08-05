@@ -26,57 +26,6 @@ angular.module('starter.controllers', [])
 })
 
 
-/*.controller('FriendsCtrl', function($scope, Friends, $ionicModal) 
-{
-       $ionicModal.fromTemplateUrl('templates/friend-add-modal.html', 
-       {
-          scope: $scope,
-          animation: 'slide-in-up'
-        }).then(function(modal) 
-            {
-              $scope.modal = modal;
-            });
-
-        $scope.newFriend = {
-          name: '',
-          description: ''
-        };
-
-        $scope.friends = Friends.all();
-
-        $scope.showAddFriend = function() {
-          $scope.modal.show();
-        };
-
-        $scope.addFriend = function() {
-          if(!$scope.newFriend.$id) {
-            Friends.add($scope.newFriend);
-          } else {
-            Friends.save($scope.newFriend);
-          }
-          $scope.newFriend = {};
-          $scope.modal.hide();
-        };
-
-        $scope.deleteFriend = function(friend) {
-          Friends.delete(friend);
-        };
-
-        $scope.editFriend = function(friend) {
-          $scope.newFriend = friend;
-          $scope.modal.show();
-        };
-
-        $scope.close = function() {
-          $scope.modal.hide();
-        };
-
-        $scope.$on('$destroy', function() {
-          $scope.modal.remove();
-        });
-})
-*/
-
 .controller('AccountCtrl', function($scope, auth, $state, store) {
 
   $scope.logout = function() {
@@ -90,6 +39,45 @@ angular.module('starter.controllers', [])
 
 .controller('invSlct', function() {
 
+<<<<<<< HEAD
+=======
+.controller('payOptionCtrl', function($scope, $ionicPopup) {
+  // When button is clicked, the popup will be shown...
+   $scope.showPopup = function() {
+      $scope.data = {}
+    
+      // Custom popup
+      var myPopup = $ionicPopup.show({
+         template: '<input type = "text" ng-model = "data.model">',
+         cssClass: 'popup', // String, The custom CSS class name
+         title: 'Payment Amount',
+         subTitle: 'Select the amount to be invested using Vest',
+         scope: $scope,
+      
+         buttons: [
+            { text: 'Cancel' }, {
+               text: '<b>Save</b>',
+               type: 'button-positive',
+                  onTap: function(e) {
+            
+                     if (!$scope.data.model) {
+                        //don't allow the user to close unless he enters model...
+                           e.preventDefault();
+                     } else {
+                        return $scope.data.model;
+                     }
+                  }
+            }
+         ]
+      });
+
+      myPopup.then(function(res) {
+         console.log('Tapped!', res);
+      });    
+   };
+
+  
+>>>>>>> origin/master
 })
 
 .controller('furtherInfoCtrl', function($scope, $state) {

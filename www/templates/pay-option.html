@@ -1,64 +1,29 @@
-<<<<<<< HEAD
-<ion-view hide-nav-bar="true" class="login-view">
-  <ion-content class="padding">
-
-   <div class="row row-center">
-      <div class="col">
-
-        <div id="logo"></div>
-
-        <form>
-          <div class="list">
-            <label class="item item-input">
-              <input type="text" placeholder="First Name" ng-model="formData.FirstName">
-            </label>
-            <label class="item item-input">
-              <input type="password" placeholder="LastName" ng-model="formData.LastName">
-            </label>
-            <label class="item item-input">
-              <input type="text" placeholder="IdNo" ng-model="formData.IdNo">
-            </label>
-            <label class="item item-input">
-              <input type="text" placeholder="Email" ng-model="formData.Email">
-            </label>
-            <label class="item item-input">
-              <input type="text" placeholder="Mobile No" ng-model="formData.Mobile">
-            </label>
-            <label class="item item-input">
-              <input type="text" placeholder="Landline No" ng-model="formData.Landline">
-            </label>
-            <label class="item item-input">
-              <input type="text" placeholder="Home Address" ng-model="formData.Address">
-            </label>
-            <label class="item item-input">
-              <input type="text" placeholder="Parish" ng-model="formData.Parish">
-            </label>
-            <label class="item item-input">
-              <input type="text" placeholder="Agreement Id No" ng-model="formData.AgreementId">
-            </label>
-            <label class="item item-input">
-              <input type="text" placeholder="Agreement Date" ng-model="formData.AgreementDate">
-            </label>
-            <label class="item item-input">
-              <input type="text" placeholder="Investment Amount" ng-model="formData.Amount">
-            </label>
-            <label class="item item-input">
-              <input type="text" placeholder="Investment Maturity Date" ng-model="formData.MaturityDate">
-            </label>
-          </div>
-
-          <button class="button button-block button-positive button-login" ng-click="login()">
-            Login
-          </button>
-        </form>
-
-      </div>
-    </div>
-
-=======
-<ion-view title="Pay Option">
+ <ion-view title="Pay Option" hide-nav-bar="true">
   <ion-content class="has-header padding">
-    <p>pay option</p>
->>>>>>> origin/master
+  
+ 		 <div class="col logo"><img src="img/Opitions.png"></div>
+
+    <div class="list">
+	    <a class="item item-thumbnail-left" ng-click = "showPopup()" >
+	      <img src="img/money.png">
+	      <h2>Cash Payment</h2>
+	      <p>Click to select the amount</p>
+	    </a>
+	</div>
+	<div class="list">
+	    <a class="item item-thumbnail-left" href="#">
+	      <img src="img/bank.png">
+	      <h2>Bank Transfer</h2>
+	      <p>Click to select the amount</p>
+	    </a>
+	</div>
+	<div class="list">
+	    <a class="item item-thumbnail-left" href="#">
+	      <img src="img/card.png">
+	      <h2>Credit Card</h2>
+	      <p>Click to select the amount</p>
+	    </a>
+	</div>
+  
   </ion-content>
 </ion-view>
