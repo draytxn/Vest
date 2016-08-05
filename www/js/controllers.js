@@ -88,12 +88,8 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('touchCtrl', function() {
+.controller('invSlct', function() {
 
-})
-
-.controller('payOptionCtrl', function() {
-  
 })
 
 .controller('furtherInfoCtrl', function($scope, $state) {
@@ -114,5 +110,12 @@ $scope.login = function () {
   "\n and password: " + $scope.formData.password);
  }
 
+})
+
+.controller('payOptionCtrl', function() {
+  
+})
+
+.controller('touchCtrl', function() {
 
 });

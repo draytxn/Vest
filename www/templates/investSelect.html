@@ -1,0 +1,42 @@
+<ion-view hide-nav-bar="true"  class="login-view">
+    <ion-content class="padding">
+        <div class="row row-center">
+            <div class="col">
+
+                <form>
+                    <div class="list">
+
+                        <label class="item item-input item-select">
+                            <div class="input-label">
+                            Select One (1) Investment Option:
+                            </div>
+                            <select>
+                            <option selected>Fortress Caribbean Growth Fund<br>(Minimum Bds $100)</option>
+                            <option>Fortress Caribbean High Interest Fund<br>(Minimum Bds $500)</option>
+                            </select>
+                        </label>
+
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Initial Investment</span>
+                            <input type="text" placeholder="$BDS">
+                            <input type="text" placeholder="Initial investment" ng-model="formData.initInvestment"> <!-- formData.FirstName -->
+                        </label>
+
+
+
+                        <ion-radio ng-model="choice" ng-value="'Individual'">Individual</ion-radio>
+                        <ion-radio ng-model="choice" ng-value="'JointEither'">Joint (requires either shareholder signature for redemptions)</ion-radio>
+                        <ion-radio ng-model="choice" ng-value="'JointTwo'">Joint(requires two signatures for redemptions)</ion-radio>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>
+
+<!-- <label class="item item-input">
+                            <input type="text" placeholder="First Name" ng-model="formData.FirstName">
+                        </label>-->

@@ -1,0 +1,128 @@
+<ion-view hide-nav-bar="true"  class="login-view">
+  <ion-content class="padding">
+
+    <div class="row row-center">
+      <div class="col">
+
+        <div id="logo"></div>
+
+        <form>
+          <div class="list">
+              <ion-radio ng-model="formData.Dr" ng-value="'Dr.'">Dr.</ion-radio>
+              <ion-radio ng-model="formData.Mr" ng-value="'Mr.'">Mr.</ion-radio>
+              <ion-radio ng-model="formData.Mrs" ng-value="'Mrs.'">Mrs.</ion-radio>
+              <ion-radio ng-model="formData.Miss" ng-value="'Miss.'">Miss.</ion-radio>
+              <ion-radio ng-model="formData.Ms" ng-value="'Ms.'">Ms.</ion-radio>
+
+              <label class="item item-input">
+              <input type="text" placeholder="Middle Name(s)" ng-model="formData.MiddleName">
+            </label>
+
+             <label class="item item-input">
+              <input type="text" placeholder="Postal Code" ng-model="formData.PostalCode">
+            </label>
+
+             <label class="item item-input">
+              <input type="text" placeholder="Country" ng-model="formData.Country">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Work No" ng-model="formData.Work">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Date of Birth (dd/mm/yyyy)" ng-model="formData.DoB">
+            </label>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                Barbados Residency Status
+                </div>
+                <select>
+                <option ng-model="formData.Resident">Resident</option>
+                <option selected ng-model="formData.NonResident">Non Resident</option>
+                </select>
+            </label>
+
+
+            <label class="item item-input">
+              <input type="text" placeholder="Citizenship (list all which apply)" ng-model="formData.Citizenship">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Country" ng-model="formData.Country">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Occupation" ng-model="formData.Occupation">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Employer" ng-model="formData.Employer">
+            </label>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                Barbados Residency Status
+                </div>
+                <select>
+                <option selected ng-model="formData.UtilityBill">Recent Utility Build</option>
+                <option ng-model="formData.BankOrCredit">Bank or Credit Card Statement</option>
+                <option ng-model="formData.Other">Other</option>
+                </select>
+            </label>
+            
+            <!-- have other text input appear if other selected-->
+            <label class="item item-input">
+              <input type="text" placeholder="Other" ng-model="formData.Other">
+            </label>
+
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                Barbados Residency Status
+                </div>
+                <select>
+                <option selected ng-model="formData.IDcard">National I.D. Card</option>
+                <option ng-model="formData.DriverLicense">Driver's License</option>
+                <option ng-model="formData.Passport">Passport</option>
+                </select>
+            </label>
+
+<br>
+
+            <!-- have the respective label appear based on selection -->
+            Kindly enter the identification number for the I.Ds you have supplied
+            <label class="item item-input">
+              <input type="text" placeholder="National I.D. #" ng-model="formData.NatIDNo">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Driver's Lisence #'" ng-model="formData.DriverLisenceNo">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Passport #" ng-model="formData.PassportNo">
+            </label>
+
+ 
+          </div>
+
+
+
+
+
+          <button class="button button-block button-positive" ng-click="">
+            Next
+          </button>
+        </form>
+
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
+
+<!--  <label class="item item-input">
+              <input type="text" placeholder="Agreement Id No" ng-model="formData.AgreementId">
+            </label>-->
