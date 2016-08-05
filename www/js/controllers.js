@@ -37,10 +37,13 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('invSlct', function() {
+.controller('invSlct', function() {})
 
+<<<<<<< HEAD
 })
 
+=======
+>>>>>>> origin/master
 .controller('payOptionCtrl', function($scope, $ionicPopup) {
   // When button is clicked, the popup will be shown...
    $scope.showPopup = function() {
@@ -79,24 +82,65 @@ angular.module('starter.controllers', [])
   
 })
 
-.controller('furtherInfoCtrl', function($scope, $state) {
+.controller('furtherInfoCtrl', function($scope, $state,InfoService) {
   
   $scope.formData = {};
 $scope.login = function () {
-  console.log("User logged in with membership no: " + $scope.formData.Name +
-  "\n and password: " + $scope.formData.password);
+  InfoService.addInfo($scope.formData);
+ // console.dir($scope.formData)
+  //console.log("User logged in with membership no: " + $scope.formData);
   $state.go('furtherInfo1');
  }
 })
 
- .controller('furtherInfoCtrl1', function($scope, $state) {
+ .controller('furtherInfoCtrl1', function($scope, $state,InfoService) {
   
   $scope.formData = {};
-$scope.login = function () {
-  console.log("User logged in with membership no: " + $scope.formData.Name +
-  "\n and password: " + $scope.formData.password);
+$scope.login = function ()
+ {
+  InfoService.addInfo1($scope.formData);
+  Test=InfoService.getInfo();
+  $state.go('furtherInfo2');
  }
+})
 
+ .controller('furtherInfoCtrl2', function($scope, $state,InfoService) {
+  
+  $scope.formData = {};
+$scope.login = function ()
+ {
+  InfoService.addInfo2($scope.formData);
+
+ }
+})
+
+ .controller('furtherInfoCtrl3', function($scope, $state,InfoService) 
+ {
+  
+  $scope.formData = {};
+$scope.login = function ()
+ {
+  InfoService.addInfo3($scope.formData);
+  $state.go('furtherInfo4');
+ }
+}) 
+
+  .controller('furtherInfoCtrl4', function($scope, $state,InfoService, $FirebaseArray, $FirebaseObject) {
+  
+  $scope.formData = {};
+$scope.login = function ()
+ {
+ InfoService.addInfo4($scope.formData);
+
+ Test=InfoService.getInfo();
+ console.dir(Test);
+ var ref = new Firebase("https://vesttest-1378.firebaseio.com/");
+ var usersRef = ref.child("users");
+ usersRef.set({
+    Info: Test
+  });
+
+ }
 })
 
 .controller('payOptionCtrl', function() {
