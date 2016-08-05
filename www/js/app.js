@@ -67,12 +67,12 @@ angular.module('starter', ['ionic',
       }
     })
     
-    .state('touch', {
-      url: '/touch',
-      templateUrl: 'templates/touch.html',
-      controller: 'touchCtrl'
+    .state('investSelect', {
+      url: '/invSelect',
+      templateUrl: 'templates/investSelect.html',
+      controller: 'invSlct'
     })
-    
+
     .state('furtherInfo', {
       url: '/furtherInfo',
       templateUrl: 'templates/further-info.html',
@@ -89,6 +89,12 @@ angular.module('starter', ['ionic',
       url: '/payOption',
       templateUrl: 'templates/pay-option.html',
       controller: 'payOptionCtrl'
+    })
+    
+    .state('touch', {
+      url: '/touch',
+      templateUrl: 'templates/touch.html',
+      controller: 'touchCtrl'
     });
 
 

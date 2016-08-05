@@ -37,10 +37,10 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('touchCtrl', function() {
+.controller('invSlct', function() {
 
-})
-
+<<<<<<< HEAD
+=======
 .controller('payOptionCtrl', function($scope, $ionicPopup) {
   // When button is clicked, the popup will be shown...
    $scope.showPopup = function() {
@@ -77,6 +77,7 @@ angular.module('starter.controllers', [])
    };
 
   
+>>>>>>> origin/master
 })
 
 .controller('furtherInfoCtrl', function($scope, $state) {
@@ -97,5 +98,12 @@ $scope.login = function () {
   "\n and password: " + $scope.formData.password);
  }
 
+})
+
+.controller('payOptionCtrl', function() {
+  
+})
+
+.controller('touchCtrl', function() {
 
 });
