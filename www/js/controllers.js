@@ -39,11 +39,6 @@ angular.module('starter.controllers', [])
 
 .controller('invSlct', function() {})
 
-<<<<<<< HEAD
-})
-
-=======
->>>>>>> origin/master
 .controller('payOptionCtrl', function($scope, $ionicPopup) {
   // When button is clicked, the popup will be shown...
    $scope.showPopup = function() {
