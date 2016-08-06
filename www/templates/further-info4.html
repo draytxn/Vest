@@ -11,13 +11,30 @@
 
     <label class="item item-input item-select">
                 <div class="input-label">
-                Barbados Residency Status
+                Declaration of U.S. Citizenship or U.S. Residence for Tax Purposes
                 </div>
                 <select>
-                <option ng-model="formData.Resident">Resident</option>
-                <option selected ng-model="formData.NonResident">Non Resident</option>
+                <option selected ng-model="formData.DecResident">U.S. Resident</option>
+                <option ng-model="formData.DecFormerResident">Former U.S. Resident</option>
+                <option ng-model="formData.DecNonResident">Non U.S. Resident</option>
                 </select>
             </label>
+            <button class="button button-block button-positive" ng-click="login()">
+            Next Page
+          </button>
+
+
+      <label class="item item-input">
+              <input type="text" placeholder="Country of Tax Residency" ng-model="formData.CoTR">
+            </label>
+      <label class="item item-input">
+              <input type="text" placeholder="Tax Reference Number Type" ng-model="formData.TRNT">
+            </label>
+      <label class="item item-input">
+              <input type="text" placeholder="Tax Reference Number" ng-model="formData.TaxRefNo">
+            </label>
+
+      
 
   </ion-content>
 </ion-view>
