@@ -1,0 +1,48 @@
+<ion-view hide-nav-bar="true"  class="login-view">
+  <ion-content class="padding">
+
+    <div class="row row-center">
+      <div class="col">
+
+        <div id="logo"></div>
+
+        <form>
+          <div class="list input-list style-1">
+            <label class="item item-input item-select">
+                <div class="input-label">
+                Barbados Residency Status
+                </div>
+                <select>
+                <option selected ng-model="formData.IDcard">National I.D. Card</option>
+                <option ng-model="formData.DriverLicense">Driver's License</option>
+                <option ng-model="formData.Passport">Passport</option>
+                </select>
+            </label>
+
+<br>
+
+            <!-- have the respective label appear based on selection -->
+            Kindly enter the identification number for the I.Ds you have supplied
+            <label class="item item-input">
+              <input type="text" placeholder="National I.D. #" ng-model="formData.NatIDNo">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Driver's Lisence #'" ng-model="formData.DriverLisenceNo">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Passport #" ng-model="formData.PassportNo">
+            </label>
+          </div>
+
+          <button class="button button-block button-positive" ng-click="login()">
+            Next
+          </button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

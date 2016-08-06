@@ -4,11 +4,11 @@
     <div class="row row-center">
       <div class="col">
 
-        
+        <div id="logo"></div>
+
         <form>
-          <div class="list">
-           
-              Anti-money laundering legislation requires that we ask
+          <div class="list input-list style-1">
+            Anti-money laundering legislation requires that we ask
               
               <label class="item item-input item-select">
                 <div class="input-label">
@@ -40,50 +40,9 @@
               <input type="text" placeholder="Other (please give details)" ng-model="formData.SoFDetails">
             </label>
 
-            Account Activity
-            <label class="item item-input">
-              <input type="text" placeholder="Expected level of activity (estimate annual investment amount) $" ng-model="formData.LvlofActivity">
-            </label>
-
-            <label class="item item-input item-select">
-                <div class="input-label">
-                Source of Funds
-                </div>
-                <select>
-                <option selected ng-model="formData.OneOff">One off</option>
-                <option ng-model="formData.Monthly">Monthly</option>
-                <option ng-model="formData.Quarterly">Quarterly</option>
-                <option ng-model="formData.Anually">Anually</option>
-                </select>
-            </label>
-
-            <label class="item item-input item-select">
-                <div class="input-label">
-                Would you like online access to the account?
-                </div>
-                <select>
-                <option selected ng-model="formData.AtAyes">Yes</option>
-                <option ng-model="formData.AtAno">No</option>
-                </select>
-            </label>
-
-            <label class="item item-input">
-              <input type="text" placeholder="If yes please provide email address of primary contact" ng-model="formData.SoFDetails">
-            </label>
-
-
-
           </div>
-
-
-
-          <button class="button button-block button-positive" ng-click="login()">
-            Next Page
-          </button>
         </form>
-
       </div>
     </div>
-
   </ion-content>
 </ion-view>

@@ -1,14 +1,14 @@
 <ion-view hide-nav-bar="true"  class="login-view">
   <ion-content class="padding">
 
-    <div class="bar bar-header bar-light">
-        <h1 class="title">Self-Certification</h1>
-    </div>
+    <div class="row row-center">
+      <div class="col">
 
-    <h2>Instructions for completion</h2>
-    <p>We are obliged under relevant laws, treaties and intergovernmental agreements relating to the automatic exchange of informationfor tax matters (collectively "AEOI"), to collect certain information about each account holder’s tax status. Please complete the following sections as directed and provide any additional information that is requested. Please note that we may be obliged to share this information with relevant tax authorities. Terms referenced in this form shall have the same meaning as applicable under the relevant Regulations, Guidance Notes or international agreements.If any of the following information regarding your tax residence or classiﬁcation changes in the future, please ensure you advise us of these changes promptly.</p>
+        <div id="logo"></div>
 
-
+        <form>
+          <div class="list input-list style-1">
+            
     <label class="item item-input item-select">
                 <div class="input-label">
                 Declaration of U.S. Citizenship or U.S. Residence for Tax Purposes
@@ -34,7 +34,14 @@
               <input type="text" placeholder="Tax Reference Number" ng-model="formData.TaxRefNo">
             </label>
 
-      
+          </div>
 
+          <button class="button button-block button-positive" ng-click="login()">
+            Next Page
+          </button>
+
+        </form>
+      </div>
+    </div>
   </ion-content>
 </ion-view>

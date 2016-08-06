@@ -1,0 +1,82 @@
+<ion-view hide-nav-bar="true"  class="login-view">
+  <ion-content class="padding">
+
+    <div class="row row-center">
+      <div class="col">
+
+        <div id="logo"></div>
+
+        <form>
+          <div class="list input-list style-1">
+              <label class="item item-input item-select">
+                <div class="input-label">
+                Barbados Residency Status
+                </div>
+                <select>
+                <option selected ng-model="formData.Dr">Dr</option>
+                <option ng-model="formData.Mr">Mr</option>
+                <option ng-model="formData.Mrs">Mrs</option>
+                <option ng-model="formData.Miss">Miss</option>
+                <option ng-model="formData.Ms">Ms</option>
+                </select>
+            </label>
+
+              <label class="item item-input">
+              <input type="text" placeholder="Middle Name(s)" ng-model="formData.MiddleName">
+            </label>
+
+             <label class="item item-input">
+              <input type="text" placeholder="Postal Code" ng-model="formData.PostalCode">
+            </label>
+
+             <label class="item item-input">
+              <input type="text" placeholder="Country" ng-model="formData.Country">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Work No" ng-model="formData.Work">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Date of Birth (dd/mm/yyyy)" ng-model="formData.DoB">
+            </label>
+
+            <button class="button button-block button-positive" ng-click="login()">
+            Next
+          </button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+
+
+
+
+<!-- 
+
+<ion-view hide-nav-bar="true"  class="login-view">
+  <ion-content class="padding">
+
+    <div class="row row-center">
+      <div class="col">
+
+        <div id="logo"></div>
+
+        <form>
+          <div class="list input-list style-1">
+          </div>
+
+          <button class="button button-block button-positive" ng-click="login()">
+            Next Page
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+
+    -->

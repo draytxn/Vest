@@ -1,0 +1,63 @@
+<ion-view hide-nav-bar="true"  class="login-view">
+  <ion-content class="padding">
+
+    <div class="row row-center">
+      <div class="col">
+
+        <div id="logo"></div>
+
+        <form>
+          <div class="list input-list style-1">
+            <label class="item item-input item-select">
+                <div class="input-label">
+                Barbados Residency Status
+                </div>
+                <select>
+                <option ng-model="formData.Resident">Resident</option>
+                <option selected ng-model="formData.NonResident">Non Resident</option>
+                </select>
+            </label>
+
+
+            <label class="item item-input">
+              <input type="text" placeholder="Citizenship (list all which apply)" ng-model="formData.Citizenship">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Country" ng-model="formData.Country">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Occupation" ng-model="formData.Occupation">
+            </label>
+
+            <label class="item item-input">
+              <input type="text" placeholder="Employer" ng-model="formData.Employer">
+            </label>
+
+            <label class="item item-input item-select">
+                <div class="input-label">
+                Barbados Residency Status
+                </div>
+                <select>
+                <option selected ng-model="formData.UtilityBill">Recent Utility Build</option>
+                <option ng-model="formData.BankOrCredit">Bank or Credit Card Statement</option>
+                <option ng-model="formData.Other">Other</option>
+                </select>
+            </label>
+            
+            <!-- have other text input appear if other selected
+            <label class="item item-input">
+              <input type="text" placeholder="Other" ng-model="formData.Other">
+            </label>  -->
+
+            <button class="button button-block button-positive" ng-click="login()">
+            Next
+          </button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
