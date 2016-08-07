@@ -89,7 +89,7 @@ $scope.login = function () {
   InfoService.addInfo($scope.formData);
  // console.dir($scope.formData)
   //console.log("User logged in with membership no: " + $scope.formData);
-  $state.go('furtherInfo1');
+  $state.go('furtherInfo2');
  }
 })
 
