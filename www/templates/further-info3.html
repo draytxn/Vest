@@ -1,16 +1,17 @@
-<ion-view hide-nav-bar="true"  class="login-view">
+<ion-view title="Step 4/7" class="login-view">
   <ion-content class="padding">
 
     <div class="row row-center">
       <div class="col">
 
-        <div id="logo"></div>
+    <div class="logo "><img src="img/place1.png"></div>
 
         <form>
-          <div class="list input-list style-1">
+          <div class=" one list input-list style-1">
             <label class="item item-input item-select">
                 <div class="input-label">
-                Barbados Residency Status
+                Residency <br>
+                Status
                 </div>
                 <select>
                 <option ng-model="formData.Resident">Resident</option>
@@ -19,25 +20,25 @@
             </label>
 
 
-            <label class="item item-input">
+           
               <input type="text" placeholder="Citizenship (list all which apply)" ng-model="formData.Citizenship">
-            </label>
+         
 
-            <label class="item item-input">
+            
               <input type="text" placeholder="Country" ng-model="formData.Country">
-            </label>
+           
 
-            <label class="item item-input">
+          
               <input type="text" placeholder="Occupation" ng-model="formData.Occupation">
-            </label>
+          
 
-            <label class="item item-input">
+           
               <input type="text" placeholder="Employer" ng-model="formData.Employer">
-            </label>
+           
 
             <label class="item item-input item-select">
                 <div class="input-label">
-                Barbados Residency Status
+                Proof of <br> Address 
                 </div>
                 <select>
                 <option selected ng-model="formData.UtilityBill">Recent Utility Build</option>
@@ -50,7 +51,7 @@
             <label class="item item-input">
               <input type="text" placeholder="Other" ng-model="formData.Other">
             </label>  -->
-
+<br>
              <button class="test button button-block icon-right ion-chevron-right button-login" ng-click="login()">
                     Next Page
                   </button>

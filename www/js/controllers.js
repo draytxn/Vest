@@ -92,10 +92,10 @@ angular.module('starter.controllers', [])
   $scope.formData = {};
 $scope.login = function ()
  {
-  $scope.login = function () {
+ 
   InfoService.addInfo($scope.formData);
   $state.go('furtherInfo2');
- }
+
  }
 })
 
@@ -150,9 +150,17 @@ $scope.login = function ()
   
   $scope.formData = {};
 $scope.login = function ()
- {
-  InfoService.addInfo($scope.formData);
-  $state.go('furtherInfo7');
+  {
+ InfoService.addInfo($scope.formData);
+
+ Test=InfoService.getInfo();
+ console.dir(Test);
+ var ref = new Firebase("https://vesttest-1378.firebaseio.com/");
+ var usersRef = ref.child("users");
+ usersRef.set({
+    Info: Test
+  });
+
  }
 }) 
 

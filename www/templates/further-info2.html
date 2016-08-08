@@ -1,16 +1,16 @@
-<ion-view hide-nav-bar="true"  class="login-view">
+<ion-view title="Step 3/7" class="login-view">
   <ion-content class="padding">
 
     <div class="row row-center">
       <div class="col">
 
-        <div id="logo"></div>
+            <div class="logo "><img src="img/place1.png"></div>
 
         <form>
-          <div class="list input-list style-1">
+          <div class="one list input-list style-1">
               <label class="item item-input item-select">
                 <div class="input-label">
-                Barbados Residency Status
+                Barbados Status
                 </div>
                 <select>
                 <option selected ng-model="formData.Dr">Dr</option>
@@ -21,26 +21,23 @@
                 </select>
             </label>
 
-              <label class="item item-input">
+           
               <input type="text" placeholder="Middle Name(s)" ng-model="formData.MiddleName">
-            </label>
+           
 
-             <label class="item item-input">
               <input type="text" placeholder="Postal Code" ng-model="formData.PostalCode">
-            </label>
+            
 
-             <label class="item item-input">
               <input type="text" placeholder="Country" ng-model="formData.Country">
-            </label>
+         
 
-            <label class="item item-input">
               <input type="text" placeholder="Work No" ng-model="formData.Work">
-            </label>
+      
 
-            <label class="item item-input">
+          
               <input type="text" placeholder="Date of Birth (dd/mm/yyyy)" ng-model="formData.DoB">
-            </label>
-
+       
+<br>
              <button class="test button button-block icon-right ion-chevron-right button-login" ng-click="login()">
                     Next Page
                   </button>

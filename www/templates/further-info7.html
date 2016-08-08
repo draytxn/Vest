@@ -1,4 +1,4 @@
-<ion-view hide-nav-bar="true"  class="login-view">
+<ion-view title="Step 8/8"   class="login-view">
   <ion-content class="padding">
 
     <div class="row row-center">
@@ -7,9 +7,9 @@
         <div id="logo"></div>
 
         <form>
-          <div class="list input-list style-1">
+          <div class=" one list input-list style-1">
             
-    <label class="item item-input item-select">
+            <label class="item item-input item-select">
                 <div class="input-label">
                 Declaration of U.S. Citizenship or U.S. Residence for Tax Purposes
                 </div>
@@ -19,26 +19,15 @@
                 <option ng-model="formData.DecNonResident">Non U.S. Resident</option>
                 </select>
             </label>
-            <button class="button button-block button-positive" ng-click="login()">
-            Next Page
-          </button>
-
-
-      <label class="item item-input">
+          
+    
               <input type="text" placeholder="Country of Tax Residency" ng-model="formData.CoTR">
-            </label>
-      <label class="item item-input">
               <input type="text" placeholder="Tax Reference Number Type" ng-model="formData.TRNT">
-            </label>
-      <label class="item item-input">
               <input type="text" placeholder="Tax Reference Number" ng-model="formData.TaxRefNo">
-            </label>
-
           </div>
 
            <button class="test button button-block icon-right ion-chevron-right button-login" ng-click="login()">
-                    Next Page
-                  </button>
+                    Next Page</button>
 
         </form>
       </div>

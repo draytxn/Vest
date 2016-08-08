@@ -1,13 +1,13 @@
-<ion-view hide-nav-bar="true"  class="login-view">
+<ion-view  title="Step 7/7"   class="login-view">
   <ion-content class="padding">
 
     <div class="row row-center">
       <div class="col">
 
-        <div id="logo"></div>
+        <div class="logo "><img src="img/place1.png"></div>
 
         <form>
-          <div class="list input-list style-1">
+          <div class="one list input-list style-1">
           <label class="item item-input item-select">
                 <div class="input-label">
                 Source of Funds
@@ -19,14 +19,12 @@
                 </select>
             </label>
 
-            <label class="item item-input">
+           
               <input type="text" placeholder="Other (please give details)" ng-model="formData.SoFDetails">
-            </label>
-
-            Account Activity
-            <label class="item item-input">
-              <input type="text" placeholder="Expected level of activity (estimate annual investment amount) $" ng-model="formData.LvlofActivity">
-            </label>
+         
+        
+              <input type="text" placeholder="Expected level of activity $" ng-model="formData.LvlofActivity">
+         
 
             <label class="item item-input item-select">
                 <div class="input-label">
@@ -42,7 +40,7 @@
 
             <label class="item item-input item-select">
                 <div class="input-label">
-                Would you like online access to the account?
+                Would you like online <br>access to the account?
                 </div>
                 <select>
                 <option selected ng-model="formData.AtAyes">Yes</option>
@@ -50,9 +48,8 @@
                 </select>
             </label>
 
-            <label class="item item-input">
-              <input type="text" placeholder="If yes please provide email address of primary contact" ng-model="formData.SoFDetails">
-            </label>
+              <input type="text" placeholder="If yes please provide email address" ng-model="formData.SoFDetails">
+         
 
           </div>
 

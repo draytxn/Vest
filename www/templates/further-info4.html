@@ -1,47 +1,37 @@
-<ion-view hide-nav-bar="true"  class="login-view">
+<ion-view  title="Step 5/7"  class="login-view">
   <ion-content class="padding">
 
     <div class="row row-center">
       <div class="col">
 
-        <div id="logo"></div>
+        <div class="logo "><img src="img/place1.png"></div>
 
-        <form>
-          <div class="list input-list style-1">
-            <label class="item item-input item-select">
-                <div class="input-label">
-                Barbados Residency Status
-                </div>
-                <select>
-                <option selected ng-model="formData.IDcard">National I.D. Card</option>
-                <option ng-model="formData.DriverLicense">Driver's License</option>
-                <option ng-model="formData.Passport">Passport</option>
-                </select>
-            </label>
+            <form>
+              <div class="one list input-list style-1">
+                  <br>
+                  <input type="text" placeholder="National I.D. #" ng-model="formData.NatIDNo">
+                  <input type="text" placeholder="Driver's Lisence #'" ng-model="formData.DriverLisenceNo">
+                  <label class="item item-input item-select">
+                      <div class="input-label">
+                      Declaration of U.S. Citizenship or U.S. Residence for Tax Purposes
+                      </div>
+                      <select>
+                      <option selected ng-model="formData.DecResident">U.S. Resident</option>
+                      <option ng-model="formData.DecFormerResident">Former U.S. Resident</option>
+                      <option ng-model="formData.DecNonResident">Non U.S. Resident</option>
+                      </select>
+                  </label>
+          
+    
+                  <input type="text" placeholder="Country of Tax Residency" ng-model="formData.CoTR">
+                  <input type="text" placeholder="Tax Reference Number Type" ng-model="formData.TRNT">
+                  <input type="text" placeholder="Tax Reference Number" ng-model="formData.TaxRefNo">
+              </div>
 
-<br>
-
-            <!-- have the respective label appear based on selection -->
-            Kindly enter the identification number for the I.Ds you have supplied
-            <label class="item item-input">
-              <input type="text" placeholder="National I.D. #" ng-model="formData.NatIDNo">
-            </label>
-
-            <label class="item item-input">
-              <input type="text" placeholder="Driver's Lisence #'" ng-model="formData.DriverLisenceNo">
-            </label>
-
-            <label class="item item-input">
-              <input type="text" placeholder="Passport #" ng-model="formData.PassportNo">
-            </label>
-          </div>
-
-           <button class="test button button-block icon-right ion-chevron-right button-login" ng-click="login()">
-                    Next Page
-                  </button>
-
-          </div>
-        </form>
+               <button class="test button button-block icon-right ion-chevron-right button-login" ng-click="login()">
+                        Next Page</button>
+              
+            </form>
       </div>
     </div>
   </ion-content>

@@ -1,18 +1,22 @@
-<ion-view hide-nav-bar="true"  class="login-view">
+<ion-view  title="Step 6/7"  class="login-view">
   <ion-content class="padding">
 
     <div class="row row-center">
       <div class="col">
 
-        <div id="logo"></div>
+        <div class="logo "><img src="img/place1.png"></div>
 
         <form>
-          <div class="list input-list style-1">
-            Anti-money laundering legislation requires that we ask
-              
+          <div class=" one list input-list style-1">
+
+          <div class="two three">
+            Anti-money laundering legislation requires that we ask <br>
+
+            Are any of the applicant(s) or immediate family members a current or former senior government, political or military oﬃcial, or do any of them have arelativeor close connection who is a current or former senior government, political or military oﬃcial?
+          </div>    
               <label class="item item-input item-select">
                 <div class="input-label">
-                Are any of the applicant(s) or immediate family members a current or former senior government, political or military oﬃcial, or do any of them have arelativeor close connectionwho is a current or former senior government, political or military oﬃcial?
+                
                 </div>
                 <select>
                 <option selected ng-model="formData.FoGyes">Yes</option>
@@ -20,9 +24,9 @@
                 </select>
             </label>
 
-            <label class="item item-input">
+       
               <input type="text" placeholder="If Yes, please provide details" ng-model="formData.FoGDetials">
-            </label>
+    
 
 
           <label class="item item-input item-select">
@@ -36,9 +40,9 @@
                 </select>
             </label>
 
-            <label class="item item-input">
+        
               <input type="text" placeholder="Other (please give details)" ng-model="formData.SoFDetails">
-            </label>
+        
 
              <button class="test button button-block icon-right ion-chevron-right button-login" ng-click="login()">
                     Next Page
