@@ -40,10 +40,6 @@ angular.module('starter.controllers', [])
 
 .controller('invSlct', function() {})
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 .controller('payOptionCtrl', function($scope, $ionicPopup) {
   // When button is clicked, the popup will be shown...
    $scope.showPopup = function() {
@@ -89,7 +85,7 @@ $scope.login = function () {
   InfoService.addInfo($scope.formData);
  // console.dir($scope.formData)
   //console.log("User logged in with membership no: " + $scope.formData);
-  $state.go('furtherInfo2');
+  $state.go('furtherInfo1');
  }
 })
 
