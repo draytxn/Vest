@@ -41,43 +41,20 @@ angular.module('starter.services', ['firebase'])
 
 .service('InfoService', function()
 {
-
+  Infoo={};
   var addInfo= function(Info)
   {
-    Infoo=Info;
+
+    Infoo=angular.extend(Infoo,Info);
   };
 
-  var addInfo1= function(Info1)
-  {
-    Infoo1=Info1;
-  };
-
-  var addInfo2= function(Info2)
-  {
-    Infoo2=Info2;
-  };
-
-  var addInfo3= function(Info3)
-  {
-    Infoo3=Info3;
-  };
-
-  var addInfo4= function(Info4)
-  {
-    Infoo4=Info4;
-  };
 
 
   var getInfo = function(){
-    TheInfo=angular.extend(Infoo,Infoo1,Infoo2,Infoo3,Infoo4);
-      return TheInfo;
+      return Infoo;
   };
   return {
     addInfo:addInfo,
-    addInfo1:addInfo1,
-    addInfo2:addInfo2,
-    addInfo3:addInfo3,
-    addInfo4:addInfo4,
     getInfo:getInfo
   }
   ;
