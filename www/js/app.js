@@ -126,6 +126,12 @@ angular.module('starter', ['ionic',
       templateUrl: 'templates/pay-option.html',
       controller: 'payOptionCtrl'
     })
+
+    .state('form1', {
+      url: '/form1',
+      templateUrl: 'templates/form1.html',
+      controller: 'form1'
+    })
     
     .state('touch', {
       url: '/touch',

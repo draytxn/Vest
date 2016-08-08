@@ -152,19 +152,11 @@ $scope.login = function ()
 $scope.login = function ()
   {
  InfoService.addInfo($scope.formData);
-
- Test=InfoService.getInfo();
- console.dir(Test);
- var ref = new Firebase("https://vesttest-1378.firebaseio.com/");
- var usersRef = ref.child("users");
- usersRef.set({
-    Info: Test
-  });
-
+ $state.go('furtherInfo7');
  }
 }) 
 
-  .controller('furtherInfoCtrl7', function($scope, $state,InfoService, $FirebaseArray, $FirebaseObject) {
+  .controller('furtherInfoCtrl7', function($scope, $state,InfoService, $FirebaseArray, $FirebaseObject,$ionicPopup) {
   
   $scope.formData = {};
 $scope.login = function ()
@@ -172,15 +164,23 @@ $scope.login = function ()
  InfoService.addInfo($scope.formData);
 
  Test=InfoService.getInfo();
- console.dir(Test);
+ //console.dir(Test);
  var ref = new Firebase("https://vesttest-1378.firebaseio.com/");
  var usersRef = ref.child("users");
  usersRef.set({
     Info: Test
   });
-
+$state.go('form1');
  }
 })
+
+ .controller('form1', function($scope, $state,InfoService) 
+ {
+
+  $scope.data=InfoService.getInfo();
+  $scope.hello=$scope.data.FirstName;
+  console.log($scope.data);
+})   
 
 .controller('payOptionCtrl', function() {
   
