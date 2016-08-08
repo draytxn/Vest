@@ -40,10 +40,7 @@ angular.module('starter.controllers', [])
 
 .controller('invSlct', function() {})
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 .controller('payOptionCtrl', function($scope, $ionicPopup) {
   // When button is clicked, the popup will be shown...
    $scope.showPopup = function() {
@@ -85,11 +82,9 @@ angular.module('starter.controllers', [])
 .controller('furtherInfoCtrl', function($scope, $state,InfoService) {
   
   $scope.formData = {};
-$scope.login = function () {
+  $scope.login = function () {
   InfoService.addInfo($scope.formData);
- // console.dir($scope.formData)
-  //console.log("User logged in with membership no: " + $scope.formData);
-  $state.go('furtherInfo2');
+  $state.go('furtherInfo1');
  }
 })
 
@@ -98,9 +93,10 @@ $scope.login = function () {
   $scope.formData = {};
 $scope.login = function ()
  {
-  InfoService.addInfo1($scope.formData);
-  Test=InfoService.getInfo();
+  $scope.login = function () {
+  InfoService.addInfo($scope.formData);
   $state.go('furtherInfo2');
+ }
  }
 })
 
@@ -109,7 +105,8 @@ $scope.login = function ()
   $scope.formData = {};
 $scope.login = function ()
  {
-  InfoService.addInfo2($scope.formData);
+  InfoService.addInfo($scope.formData);
+  $state.go('furtherInfo3');
 
  }
 })
@@ -120,17 +117,52 @@ $scope.login = function ()
   $scope.formData = {};
 $scope.login = function ()
  {
-  InfoService.addInfo3($scope.formData);
+  InfoService.addInfo($scope.formData);
   $state.go('furtherInfo4');
  }
 }) 
 
-  .controller('furtherInfoCtrl4', function($scope, $state,InfoService, $FirebaseArray, $FirebaseObject) {
+
+ .controller('furtherInfoCtrl4', function($scope, $state,InfoService) 
+ {
   
   $scope.formData = {};
 $scope.login = function ()
  {
- InfoService.addInfo4($scope.formData);
+  InfoService.addInfo($scope.formData);
+  $state.go('furtherInfo5');
+ }
+}) 
+
+  .controller('furtherInfoCtrl5', function($scope, $state,InfoService) 
+ {
+  
+  $scope.formData = {};
+$scope.login = function ()
+ {
+  InfoService.addInfo($scope.formData);
+  $state.go('furtherInfo6');
+ }
+}) 
+
+
+ .controller('furtherInfoCtrl6', function($scope, $state,InfoService) 
+ {
+  
+  $scope.formData = {};
+$scope.login = function ()
+ {
+  InfoService.addInfo($scope.formData);
+  $state.go('furtherInfo7');
+ }
+}) 
+
+  .controller('furtherInfoCtrl7', function($scope, $state,InfoService, $FirebaseArray, $FirebaseObject) {
+  
+  $scope.formData = {};
+$scope.login = function ()
+ {
+ InfoService.addInfo($scope.formData);
 
  Test=InfoService.getInfo();
  console.dir(Test);
