@@ -192,22 +192,22 @@ $state.go('form1'); //form1
 
 .controller('form2', function($scope, $state,InfoService) 
  {
-
+  $scope.data=InfoService.getInfo();
 }) 
 
 .controller('form3', function($scope, $state,InfoService) 
  {
-
+  $scope.data=InfoService.getInfo();
 }) 
 
 .controller('form4', function($scope, $state,InfoService) 
  {
-
+  $scope.data=InfoService.getInfo();
 }) 
 
 .controller('fullPage', function($scope, $state,InfoService) 
  {
-
+  $scope.data=InfoService.getInfo();
 }) 
 
 .controller('payOptionCtrl', function() {
