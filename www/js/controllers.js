@@ -186,18 +186,29 @@ $state.go('form1'); //form1
  {
 
   $scope.data=InfoService.getInfo();
-  $scope.hello=$scope.data.FirstName;
   console.log($scope.data);
+  $scope.next = function ()
+  {
+    $state.go('form2');
+  }
 })   
 
 .controller('form2', function($scope, $state,InfoService) 
  {
   $scope.data=InfoService.getInfo();
+  $scope.next = function ()
+ {
+  $state.go('form3');
+ }
 }) 
 
 .controller('form3', function($scope, $state,InfoService) 
  {
   $scope.data=InfoService.getInfo();
+  $scope.next = function ()
+  {
+    $state.go('form4');
+  }
 }) 
 
 .controller('form4', function($scope, $state,InfoService) 
