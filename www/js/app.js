@@ -129,8 +129,32 @@ angular.module('starter', ['ionic',
 
     .state('form1', {
       url: '/form1',
-      templateUrl: 'templates/form1.html',
+      templateUrl: 'templates/FFMApplicationForm_Individual/1.html', //templates/FFMApplicationForm_Individual/1.html
       controller: 'form1'
+    })
+
+    .state('form2', {
+      url: 'form2',
+      templateUrl: 'templates/FFMApplicationForm_Individual/2.html',
+      controller: 'form2'
+    })
+
+    .state('form3', {
+      url: 'form3',
+      templateUrl: 'templates/FFMApplicationForm_Individual/3.html',
+      controller: 'form2'
+    })
+
+    .state('form4', {
+      url: 'form4',
+      templateUrl: 'templates/FFMApplicationForm_Individual/4.html',
+      controller: 'form4'
+    })
+
+    .state('fullPage', {
+      url: 'fullPage',
+      templateUrl: 'templates/FFMApplicationForm_Individual/index.html',
+      controller: 'fullPage'
     })
     
     .state('touch', {

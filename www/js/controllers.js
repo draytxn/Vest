@@ -150,9 +150,17 @@ $scope.login = function ()
   
   $scope.formData = {};
 $scope.login = function ()
-  {
+ {
  InfoService.addInfo($scope.formData);
- $state.go('furtherInfo7');
+
+ Test=InfoService.getInfo();
+ //console.dir(Test);
+ var ref = new Firebase("https://vesttest-1378.firebaseio.com/");
+ var usersRef = ref.child("users");
+ usersRef.set({
+    Info: Test
+  });
+$state.go('form1'); //form1
  }
 }) 
 
@@ -170,17 +178,37 @@ $scope.login = function ()
  usersRef.set({
     Info: Test
   });
-$state.go('form1');
+$state.go('form1'); //form1
  }
 })
 
- .controller('form1', function($scope, $state,InfoService) 
+.controller('form1', function($scope, $state,InfoService) 
  {
 
   $scope.data=InfoService.getInfo();
   $scope.hello=$scope.data.FirstName;
   console.log($scope.data);
 })   
+
+.controller('form2', function($scope, $state,InfoService) 
+ {
+
+}) 
+
+.controller('form3', function($scope, $state,InfoService) 
+ {
+
+}) 
+
+.controller('form4', function($scope, $state,InfoService) 
+ {
+
+}) 
+
+.controller('fullPage', function($scope, $state,InfoService) 
+ {
+
+}) 
 
 .controller('payOptionCtrl', function() {
   
