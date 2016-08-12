@@ -36,6 +36,52 @@ angular.module('starter', ['ionic',
   // Each state's controller can be found in controllers.js
   $stateProvider
 
+    .state('app', {
+    url: '/app',
+    abstract: true,
+    templateUrl: 'templates/menu.html',
+    controller: 'AppCtrl'
+  })
+
+  .state('app.search', {
+    url: '/search',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/search.html'
+      }
+    }
+  })
+
+  .state('app.browse', {
+      url: '/browse',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/browse.html'
+        }
+      }
+    })
+  
+    .state('app.sidebarpage', {
+      url: '/sidebarpage',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/sidebarpage.html',
+          controller: 'sidebar'
+        }
+      }
+    })
+
+  .state('app.single', {
+    url: '/playlists/:playlistId',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/playlist.html',
+        controller: 'PlaylistCtrl'
+      }
+    }
+  })
+
+
     // This is the Login state
     .state('login', {
       url: "/login",
@@ -67,6 +113,14 @@ angular.module('starter', ['ionic',
       }
     })
     
+
+    .state('payOption', {
+      url: '/payOption',
+      templateUrl: 'templates/pay-option.html',
+      controller: 'payOptionCtrl'
+    })
+
+
     .state('investSelect', {
       url: '/invSelect',
       templateUrl: 'templates/investSelect.html',
@@ -121,11 +175,7 @@ angular.module('starter', ['ionic',
       controller: 'furtherInfoCtrl7'
     })
     
-    .state('payOption', {
-      url: '/payOption',
-      templateUrl: 'templates/pay-option.html',
-      controller: 'payOptionCtrl'
-    })
+    
 
     .state('form1', {
       url: '/form1',

@@ -16,7 +16,7 @@ angular.module('starter.controllers', [])
       api: 'firebase'
     }).then(function(delegation) {
       store.set('firebaseToken', delegation.id_token);
-      $state.go('furtherInfo');
+      $state.go('app.sidebarpage');
     }, function(error) {
       console.log("There was an error logging in", error);
     })
@@ -25,6 +25,13 @@ angular.module('starter.controllers', [])
   });
 })
 
+.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+
+})
+
+.controller('sidebar', function($scope) {
+
+})
 
 .controller('AccountCtrl', function($scope, auth, $state, store) {
 
